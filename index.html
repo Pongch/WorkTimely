@@ -1,0 +1,87 @@
+<html>
+	<head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+		<link rel="stylesheet" href="flipclock.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Aldrich|Open+Sans" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="flipclock.js"></script>
+        <script src="app.js"></script>
+        <script src="easyNotify.js"></script>
+	</head>
+	<body>
+        <br>
+<div class="jumbotron">
+<h1 class="text-center heading">TheWorkTi.me</h1>
+</div>
+<!--Image and Tooltips-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-offset-4 col-md-4">
+                <img id="timey" class="loadImage center-block" src="timey-default.png">
+        </div>
+        <div class= "col-md-3 status speech">
+            <br>
+            <select name="Help" class="help heading" title="Need Help?">
+                <option value="Let me know if you need any help">Need Help?</option>
+                <option value="Egestas mollitia quos metus natus assumenda ullam suscipit ultricies. Voluptas, nihil natoque elementum error ligula exercitationem aliquid tempor mauris penatibus. Suspendisse! Rutrum volutpat adipiscing nascetur cras conubia cupidatat! Pede voluptatibus tristique adipiscing, eleifend vestibulum, dolore, eveniet facilis ipsa, deleniti sit repudiandae temporibus esse hic! Primis phasellus ut vestibulum pellentesque condimentum laboris sed?">What is MyWorkTi.me</option>
+                <option value="Egestas mollitia quos metus natus assumenda ullam suscipit ultricies. Voluptas, nihil natoque elementum error ligula exercitationem aliquid tempor mauris penatibus. Suspendisse! Rutrum volutpat adipiscing nascetur cras conubia cupidatat! Pede voluptatibus tristique adipiscing, eleifend vestibulum, dolore, eveniet facilis ipsa, deleniti sit repudiandae temporibus esse hic! Primis phasellus ut vestibulum pellentesque condimentum laboris sed?">How to use the Work Timer</option>
+                <option value="Egestas mollitia quos metus natus assumenda ullam suscipit ultricies. Voluptas, nihil natoque elementum error ligula exercitationem aliquid tempor mauris penatibus. Suspendisse! Rutrum volutpat adipiscing nascetur cras conubia cupidatat! Pede voluptatibus tristique adipiscing, eleifend vestibulum, dolore, eveniet facilis ipsa, deleniti sit repudiandae temporibus esse hic! Primis phasellus ut vestibulum pellentesque condimentum laboris sed?">How to use the Break Timer</option>
+                <option value="Pavel is a bitch">Is Pavel a bitch?</option>
+            
+            </select>
+            <br>
+            <br>
+            <span class="response"></span>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<!--message logs-->
+<div class="col-md-offset-4 col-md-4 bubble">
+	<h2 class="heading text-center">Status: </h2>
+    <div class="message text-center status">Let us Begin!</div>
+</div>
+        
+<!-- Work clock & Break clock--> 
+<div class="container">
+    <div class="col-md-offset-1 col-md-4 content-block">
+        <h1 class="heading content-block">Work</h1>
+        <br>
+        <div class="clock content-block"></div>
+        <br>
+        <br>
+            <div class= "blue content-block">
+                <a href="#" class="btn btn-primary btn-lg outline start" data-rel="timey-nerd.png"><span class="glyphicon glyphicon-play"></span> <p>Start</p></a>
+                <a href="#" class="btn btn-primary btn-lg outline stop"><span class="glyphicon glyphicon-pause"></span> <p>Stop</p></a>
+                <a href="#" class="btn btn-primary btn-lg outline reset"><span class="glyphicon glyphicon-step-backward"></span><p>Reset</p></a>
+            </div>
+    </div>
+    
+
+        
+    <div class="col-md-offset-2 col-md-4">
+            <h1 class="heading content-block">Break</h1>
+            <br>
+            <div class="clock2 content-block"></div>
+            <br>
+            <br>
+                <div class="blue content-block">
+                    <a href="#" class="btn btn-primary btn-lg outline start2"><span class="glyphicon glyphicon-play"></span> <p>Start</p></a>
+                    <a href="#" class="btn btn-primary btn-lg outline stop2"><span class="glyphicon glyphicon-pause"></span> <p>Stop</p></a>
+                    <a href="#" class="btn btn-primary btn-lg outline reset2"><span class="glyphicon glyphicon-step-backward"></span> <p>Reset</p></a>
+                </div>
+    </div>     
+</div>        
+<div id="notification"></div>
+<div id="notification2"></div>
+	</body>
+</html>
